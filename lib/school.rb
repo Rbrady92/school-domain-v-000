@@ -24,7 +24,7 @@ class School
   end
 
   def grade(grade)
-    ROSTER[grade].keys
+    ROSTER[grade]
   end
 
   def sort
