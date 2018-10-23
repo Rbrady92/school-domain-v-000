@@ -21,7 +21,7 @@ describe 'School' do
       @school.add_student("Jeff Baird", 10)
 
 
-      expect(@school.roster).to eq({10 => ["AC Slater", "Jeff Baird"]})
+      expect(@school.roster).to eq({7 => [], 9 => [], 10 => ["AC Slater", "Jeff Baird"]})
     end
 
     it 'is able to add students to different grades' do
@@ -30,7 +30,7 @@ describe 'School' do
       @school.add_student("Avi Flombaum", 10)
       @school.add_student("Blake Johnson", 7)
 
-      expect(@school.roster).to eq({9 => ["Homer Simpson"], 10 => ["AC Slater", "Jeff Baird", "Avi Flombaum"], 7 => ["Blake Johnson"]})
+      expect(@school.roster).to eq({7 => [], 9 => ["Homer Simpson"], 10 => ["AC Slater", "Jeff Baird", "Avi Flombaum"], 7 => ["Blake Johnson"]})
     end
   end
 
