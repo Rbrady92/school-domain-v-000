@@ -30,7 +30,7 @@ describe 'School' do
       @school.add_student("Avi Flombaum", 10)
       @school.add_student("Blake Johnson", 7)
 
-      expect(@school.roster).to eq({7 => [], 9 => ["Homer Simpson"], 10 => ["AC Slater", "Jeff Baird", "Avi Flombaum"], 7 => ["Blake Johnson"]})
+      expect(@school.roster).to eq({7 => [], 9 => ["Homer Simpson"], 10 => ["AC Slater", "Jeff Baird", "Avi Flombaum"]})
     end
   end
 
