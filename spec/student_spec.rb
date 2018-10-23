@@ -41,7 +41,7 @@ describe 'School' do
       # @school.add_student("Jeff Baird", 10)
       # @school.add_student("Blake Johnson", 7)
 
-      expect(@school.grade(10)).to eq(["AC Slater", "Avi Flombaum", "Jeff Baird"])
+      expect(@school.grade(10)).to eq(["AC Slater", "Jeff Baird", "Avi Flombaum"])
     end
   end
 
