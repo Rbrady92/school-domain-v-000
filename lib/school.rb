@@ -15,12 +15,13 @@ class School
       ROSTER[grade] << name
       ROSTER[grade].sort
     else
-      ROSTER[grade] = ["#{name}"]
+      ROSTER[grade] = []
+      ROSTER[grade] << name
       ROSTER[grade].sort
     end
   end
 
-  def grade
+  def grade(grade)
     ROSTER[grade].values
   end
 
