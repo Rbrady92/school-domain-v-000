@@ -17,7 +17,7 @@ class School
     else
       ROSTER[grade] = []
       ROSTER[grade] << name
-      ROSTER[grade].sort
+      ROSTER[grade].downcase.sort
     end
   end
 
