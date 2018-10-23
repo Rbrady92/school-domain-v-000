@@ -29,4 +29,5 @@ class School
 
   def sort
   ROSTER
+  end
 end
