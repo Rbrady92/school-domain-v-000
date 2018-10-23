@@ -20,7 +20,7 @@ class School
     #   ROSTER[grade].sort
     # end
     ROSTER[grade] << name
-    ROSTER[grade].sort
+    ROSTER[grade].values.sort
   end
 
   def grade(grade)
