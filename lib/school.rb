@@ -11,10 +11,21 @@ class School
   end
 
   def add_student(name, grade)
-    if ROSTER[grade]
+    if ROSTER.keys.include?(grade)
       ROSTER[grade] << name
+      ROSTER[grade].sort
     else
       ROSTER[grade] = ["#{name}"]
+      ROSTER[grade].sort
     end
   end
+
+  def grade
+    ROSTER[grade].values
+  end
+
+  def sort
+    ROSTER
+  end
+
 end
