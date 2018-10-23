@@ -20,7 +20,6 @@ class School
     #   ROSTER[grade].sort
     # end
     ROSTER[grade] << name
-    ROSTER[grade] = ROSTER[grade].sort
   end
 
   def grade(grade)
@@ -28,7 +27,7 @@ class School
   end
 
   def sort
-    ROSTER
+    ROSTER[grade].sort
   end
 
 end
